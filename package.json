@@ -1,0 +1,29 @@
+{
+  "name": "@letladi/unzip",
+  "version": "1.0.2",
+  "description": "A utility for unzipping files",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "create-zip": "node create-zip.js",
+    "pretest": "npm run create-zip",
+    "test": "jest",
+    "posttest": "node clean-up"
+  },
+  "keywords": [],
+  "author": "Letladi Sebesho",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.2.0",
+    "@types/uniqid": "^5.3.4",
+    "archiver": "^7.0.1",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.4",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "uniqid": "^5.4.0"
+  }
+}
